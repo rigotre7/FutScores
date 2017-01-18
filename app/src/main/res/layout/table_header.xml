@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:text="#"
+        android:layout_width="10dip"
+        android:layout_height="wrap_content"
+        android:id="@+id/position"
+        android:layout_weight="0.05"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="Team"
+        android:layout_width="100dip"
+        android:layout_height="30dp"
+        android:id="@+id/teamName"
+        android:gravity="center"
+        android:layout_weight="0.5" />
+
+    <TextView
+        android:text="P"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/points"
+        android:layout_weight="0.06"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="GP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gamesPlayed"
+        android:layout_weight="0.06"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="+/-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/goalsForAndAgainst"
+        android:layout_weight="0.06"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="GD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/goalDifference"
+        android:layout_weight="0.06"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="W"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wins"
+        android:layout_weight="0.07"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/draws"
+        android:layout_weight="0.07"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="L"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/losses"
+        android:layout_weight="0.07"
+        android:textAlignment="center" />
+
+</LinearLayout>

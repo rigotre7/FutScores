@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FutScores</string>
+    <string name="chooseLeague">Choose League</string>
+    <string name="favorites">Favorites</string>
+    <string name="topScorersButton">Top Scorers</string>
+    <string name="buttonTable">Table</string>
+    <string name="buttonFixtures">Fixtures</string>
+
+</resources>

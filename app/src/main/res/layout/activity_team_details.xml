@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_team_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rigot.futscores.TeamDetails">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar_default"
+        ></include>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tool_bar"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/menuLayoutTeamDetails">
+
+        <TextView
+            android:text="Squad"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/squadButton"
+            android:layout_weight="1.00"
+            android:background="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:text="Details"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/detailsButton"
+            android:layout_weight="1.00"
+            android:background="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/menuLayoutTeamDetails"
+        android:id="@+id/container">
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@android:drawable/alert_light_frame"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/homeTeamImageFixtures" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@android:drawable/alert_light_frame"
+        android:layout_alignBottom="@+id/homeTeamImageFixtures"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginEnd="55dp"
+        android:id="@+id/awayTeamImageFixtures" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/awayTeamImageFixtures"
+        android:layout_alignLeft="@+id/awayTeamImageFixtures"
+        android:layout_alignStart="@+id/awayTeamImageFixtures"
+        android:id="@+id/awayTeamNameFixtures"
+        android:textSize="12sp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/awayTeamNameFixtures"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:id="@+id/dateLabelFixtures" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeTeamNameFixtures"
+        android:layout_below="@+id/homeTeamImageFixtures"
+        android:layout_alignRight="@+id/homeTeamImageFixtures"
+        android:layout_alignEnd="@+id/homeTeamImageFixtures"
+        android:textSize="12sp" />
+</RelativeLayout>

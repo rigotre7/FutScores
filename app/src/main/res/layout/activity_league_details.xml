@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_league_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3"
+    android:orientation="horizontal"
+    tools:context="com.example.rigot.futscores.LeagueDetails">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar_default"
+        ></include>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tool_bar"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/menuLayout">
+
+        <TextView
+            android:text="Fixtures"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/fixturesLabel"
+            android:layout_weight="1.00"
+            android:background="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:text="Table"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tableLabel"
+            android:layout_weight="1.00"
+            android:background="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/menuLayout"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/header">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listViewFixtures" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listviewDetails"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/header" />
+
+
+</RelativeLayout>
